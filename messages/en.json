@@ -13,9 +13,11 @@
   },
   "homePage": {
     "heroSection": {
-      "title": "We Deliver",
-      "subtitle": "Parcel on Time with no Hassle",
-      "description": "Easy Tracking, fast Payment, and safe Delivery across country.",
+      "title": " 'Dear Merchant'",
+      "subtitle1": " Parcel on Time with no Hassle",
+      "subtitle2": "  Easy Tracking, Fast Payment ",
+      "subtitle3": "  And Safe Delivery Across The Country",
+      "description": " NagadFast Gives You 100% Guarantee- InshaAllah",
       "button": "Become a Merchant"
     },
     "statsSection": {

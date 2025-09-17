@@ -14,7 +14,7 @@ const HeroSection = () => {
       className="relative h-[550px] md:h-[650px] mt-44 md:mt-10 mb-16 bg-amber-100 bg-center bg-no-repeat bg-contain"
       style={{
         backgroundImage: "url('/img/landing/heroIcon/Map-BD.png')",
-        backgroundSize: '25%', // এখানে ছোট করার জন্য percentage কমাও
+        backgroundSize: '25%',
       }}
     >
       {/* Optional overlay for visibility */}
@@ -24,12 +24,18 @@ const HeroSection = () => {
       <div className="relative container mx-auto pt-10 md:pt-16 px-4 h-full flex items-center">
         <div className="flex flex-col md:flex-row justify-between items-center w-full">
           {/* Left side */}
-          <div className="flex flex-col items-center md:items-start text-center md:text-left max-w-lg">
-            <h2 className="text-[28px] md:text-[40px] text-primary font-bold leading-tight">
+          <div className="flex flex-col items-center md:items-start text-center md:text-left max-w-4xl w-full">
+            <h2 className="text-[28px] md:text-[40px] text-primary  leading-tight">
               {t('title')}
             </h2>
-            <h2 className="text-[28px] md:text-[40px] text-primary font-bold leading-tight py-3">
-              {t('subtitle')}
+            <h2 className="text-[28px] md:text-[40px] text-amber-500 font-bold leading-tight mt-2">
+              {t('subtitle1')}
+            </h2>
+            <h2 className="text-[28px] md:text-[40px] text-primary font-bold leading-tight ">
+              {t('subtitle2')}
+            </h2>
+            <h2 className="text-[28px] md:text-[40px] text-primary leading-tight ">
+              {t('subtitle3')}
             </h2>
             <p className="text-secondary text-[16px] md:text-[20px] leading-[24px] py-4 md:py-6">
               {t('description')}
