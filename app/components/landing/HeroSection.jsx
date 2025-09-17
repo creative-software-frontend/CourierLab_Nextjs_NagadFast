@@ -24,7 +24,7 @@ const HeroSection = () => {
       <div className="relative container mx-auto pt-10 md:pt-16 px-4 h-full flex items-center">
         <div className="flex flex-col md:flex-row justify-between items-center w-full">
           {/* Left side */}
-          <div className="flex flex-col items-center md:items-start text-center md:text-left max-w-4xl w-full">
+          <div className="flex flex-col items-center md:items-start text-center md:text-left max-w-2xl w-full">
             <h2 className="text-[28px] md:text-[40px] text-primary  leading-tight">
               {t('title')}
             </h2>
@@ -34,7 +34,7 @@ const HeroSection = () => {
             <h2 className="text-[28px] md:text-[40px] text-primary font-bold leading-tight ">
               {t('subtitle2')}
             </h2>
-            <h2 className="text-[28px] md:text-[40px] text-primary leading-tight ">
+            <h2 className="text-[28px] md:text-[35px] text-primary leading-tight ">
               {t('subtitle3')}
             </h2>
             <p className="text-secondary text-[16px] md:text-[20px] leading-[24px] py-4 md:py-6">
