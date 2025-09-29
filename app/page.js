@@ -12,10 +12,11 @@ export default function Home() {
     <LandingLayout>
       <HeroSection />
       <TrackParcel />
-      <FeaturesLogo />
+      <ClientReview />
+      {/* <FeaturesLogo /> */}
       <ServicesSection />
       <DeliveryCalculator />
-      <ClientReview />
+
       <Accordion />
     </LandingLayout>
   );

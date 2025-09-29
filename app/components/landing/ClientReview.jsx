@@ -1,27 +1,26 @@
-"use client";
+'use client';
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
-import { FaQuoteLeft, FaRegStar, FaStar } from "react-icons/fa";
-import { useTranslations } from "next-intl";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Autoplay } from 'swiper/modules';
+import { FaQuoteLeft, FaRegStar, FaStar } from 'react-icons/fa';
+import { useTranslations } from 'next-intl';
 
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 const defaultClientImages = [
-  "https://img.freepik.com/free-photo/confident-attractive-caucasian-guy-beige-pullon-smiling-broadly-while-standing-against-gray_176420-44508.jpg",
-  "https://randomuser.me/api/portraits/women/44.jpg",
-  "https://randomuser.me/api/portraits/men/32.jpg",
-  "https://randomuser.me/api/portraits/women/68.jpg",
-  "https://randomuser.me/api/portraits/men/55.jpg",
+  '/img/landing/color-logo-1.jpg',
+  '/img/landing/color-logo-2.jpg',
+  '/img/landing/color-logo-3.jpg',
+  '/img/landing/color-logo-4.jpg',
+  '/img/landing/color-logo-5.jpg',
 ];
 
 const ClientReview = () => {
-  const t = useTranslations("homePage.reviewsSection");
+  const t = useTranslations('homePage.reviewsSection');
 
-  
-  const reviews = t.raw("reviews"); 
+  const reviews = t.raw('reviews');
 
   const combinedReviews = reviews.map((review, index) => ({
     ...review,
@@ -29,21 +28,24 @@ const ClientReview = () => {
     rating: index % 2 === 0 ? 4 : 5,
   }));
 
-  const allReviews = combinedReviews.length > 0
-    ? combinedReviews
-    : [{
-        text: "No reviews available",
-        author: "Admin",
-        position: "System",
-        image: "https://randomuser.me/api/portraits/lego/1.jpg",
-        rating: 5,
-      }];
+  const allReviews =
+    combinedReviews.length > 0
+      ? combinedReviews
+      : [
+          {
+            text: 'No reviews available',
+            author: 'Admin',
+            position: 'System',
+            image: 'https://randomuser.me/api/portraits/lego/1.jpg',
+            rating: 5,
+          },
+        ];
 
   return (
     <div className="container mx-auto px-4 py-10">
       <div className="text-center">
         <h1 className="text-3xl md:text-4xl font-bold mb-8 text-primary">
-          {t("title")}
+          {t('title')}
         </h1>
       </div>
 
@@ -73,8 +75,9 @@ const ClientReview = () => {
                   src={review.image}
                   alt={review.author}
                   className="w-[100px] h-[100px] object-cover rounded-full border-4 border-gray-800"
-                  onError={(e) => {
-                    e.currentTarget.src = "https://randomuser.me/api/portraits/lego/1.jpg";
+                  onError={e => {
+                    e.currentTarget.src =
+                      'https://randomuser.me/api/portraits/lego/1.jpg';
                   }}
                 />
               </div>
@@ -85,15 +88,25 @@ const ClientReview = () => {
 
               <div className="flex items-start mt-5 justify-between">
                 <div>
-                  <h2 className="text-[1.2rem] font-[600] text-white">{review.author}</h2>
-                  <p className="text-[1rem] text-secondary">{review.position}</p>
+                  <h2 className="text-[1.2rem] font-[600] text-white">
+                    {review.author}
+                  </h2>
+                  <p className="text-[1rem] text-secondary">
+                    {review.position}
+                  </p>
                 </div>
                 <div className="flex items-center gap-1">
                   {Array.from({ length: 5 }).map((_, index) =>
                     index < review.rating ? (
-                      <FaStar key={index} className="text-[1.3rem] text-[#ffba24]" />
+                      <FaStar
+                        key={index}
+                        className="text-[1.3rem] text-[#ffba24]"
+                      />
                     ) : (
-                      <FaRegStar key={index} className="text-[1.3rem] text-[#ffba24]" />
+                      <FaRegStar
+                        key={index}
+                        className="text-[1.3rem] text-[#ffba24]"
+                      />
                     )
                   )}
                 </div>
@@ -106,8 +119,11 @@ const ClientReview = () => {
       </Swiper>
 
       <style jsx>{`
-        .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-        .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        .swiper-horizontal
+          > .swiper-pagination-bullets
+          .swiper-pagination-bullet,
+        .swiper-pagination-horizontal.swiper-pagination-bullets
+          .swiper-pagination-bullet {
           background: #00b795;
           opacity: 1;
         }
