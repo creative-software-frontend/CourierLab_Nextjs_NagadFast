@@ -25,22 +25,26 @@ const HeroSection = () => {
         <div className="flex flex-col md:flex-row justify-between items-center w-full">
           {/* Left side */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left max-w-2xl w-full mb-20">
-            <h2 className="text-[28px] md:text-[30px] text-primary  leading-tight">
-              {t('title')}
-            </h2>
-            <h2 className="text-[28px] md:text-[30px] text-amber-500 font-bold leading-tight mt-2">
-              {t('subtitle1')}
-            </h2>
-            <h2 className="text-[28px] md:text-[30px] text-primary font-bold leading-tight ">
-              {t('subtitle2')}
-            </h2>
-            <h2 className="text-[28px] md:text-[20px] text-primary leading-tight py-3 ">
-              {t('subtitle3')}
-            </h2>
-            <p className="text-secondary text-[16px] md:text-[20px] leading-[24px] pb-3">
-              {t('description')}
-            </p>
-            <HeroBtn className= "mt-8"/>
+            <div className="">
+              <h2 className="text-[28px] md:text-[30px] text-primary  leading-tight">
+                {t('title')}
+              </h2>
+              <h2 className="text-[28px] md:text-[30px] text-amber-500 font-bold leading-tight mt-2">
+                {t('subtitle1')}
+              </h2>
+              <h2 className="text-[28px] md:text-[30px] text-primary font-bold leading-tight ">
+                {t('subtitle2')}
+              </h2>
+              <h2 className="text-[28px] md:text-[20px] text-primary leading-tight py-3 ">
+                {t('subtitle3')}
+              </h2>
+              <p className="text-secondary text-[16px] md:text-[20px] leading-[24px] pb-3">
+                {t('description')}
+              </p>
+            </div>
+            <div className="mt-10">
+              <HeroBtn />
+            </div>
           </div>
 
           {/* Right side */}
@@ -52,9 +56,9 @@ const HeroSection = () => {
             />
 
             <div className="mb-28 md:mb-0">
-              <div className="flex gap-2 md:gap-12 md:mt-8">
+              <div className="flex gap-2.5 md:mt-8">
                 {/* Registered Merchant */}
-                <div className="flex items-center gap-3 md:gap-5">
+                <div className="flex items-center gap-3 ">
                   <div className="border-gray border-2 rounded-md p-2">
                     <img
                       className="w-6 md:w-8"
@@ -73,7 +77,7 @@ const HeroSection = () => {
                 </div>
 
                 {/* Delivery Man */}
-                <div className="flex items-center gap-3 md:gap-5">
+                <div className="flex items-center gap-3 ">
                   <div className="border-gray border-2 rounded-md p-2">
                     <img
                       className="w-6 md:w-8"
@@ -92,7 +96,7 @@ const HeroSection = () => {
                 </div>
 
                 {/* Delivery Point */}
-                <div className="flex items-center gap-3 md:gap-5">
+                <div className="flex items-center gap-3 ">
                   <div className="border-gray border-2 rounded-md p-2">
                     <img
                       className="w-6 md:w-8"
