@@ -24,23 +24,23 @@ const HeroSection = () => {
       <div className="relative container mx-auto pt-10 md:pt-16 px-4 h-full flex items-center">
         <div className="flex flex-col md:flex-row justify-between items-center w-full">
           {/* Left side */}
-          <div className="flex flex-col items-center md:items-start text-center md:text-left max-w-2xl w-full">
-            <h2 className="text-[28px] md:text-[40px] text-primary  leading-tight">
+          <div className="flex flex-col items-center md:items-start text-center md:text-left max-w-2xl w-full mb-20">
+            <h2 className="text-[28px] md:text-[30px] text-primary  leading-tight">
               {t('title')}
             </h2>
-            <h2 className="text-[28px] md:text-[40px] text-amber-500 font-bold leading-tight mt-2">
+            <h2 className="text-[28px] md:text-[30px] text-amber-500 font-bold leading-tight mt-2">
               {t('subtitle1')}
             </h2>
-            <h2 className="text-[28px] md:text-[40px] text-primary font-bold leading-tight ">
+            <h2 className="text-[28px] md:text-[30px] text-primary font-bold leading-tight ">
               {t('subtitle2')}
             </h2>
-            <h2 className="text-[28px] md:text-[35px] text-primary leading-tight ">
+            <h2 className="text-[28px] md:text-[20px] text-primary leading-tight py-3 ">
               {t('subtitle3')}
             </h2>
-            <p className="text-secondary text-[16px] md:text-[20px] leading-[24px] py-4 md:py-6">
+            <p className="text-secondary text-[16px] md:text-[20px] leading-[24px] pb-3">
               {t('description')}
             </p>
-            <HeroBtn />
+            <HeroBtn className= "mt-8"/>
           </div>
 
           {/* Right side */}
@@ -101,7 +101,7 @@ const HeroSection = () => {
                     />
                   </div>
                   <div>
-                    <h2 className="leading-[28px] font-semibold text-[24px] md:text-[32px]">
+                    <h2 className="leading-[28px] font-semibold text-[24px] md:text-[30px]">
                       {tStatsSection('numbersThree')}
                     </h2>
                     <p className="mt-1 text-secondary text-sm md:text-base">
